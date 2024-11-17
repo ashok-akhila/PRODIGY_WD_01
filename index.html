@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Responsive Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="logo"><a href="a">Web Dev Creative</div>
+            <ul class="links">
+                <li><b><a href="#home">Home</a></b></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+                
+            </div>
+        
+    </header>
+    <main style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <section id="home"><h1>WELCOME</h1><p>Hello Everyone welcome to my page <br/>Thanks for visiting</p></section>
+        <h2 id="hero"><pre>Companies are organized to make a profit, but some can be structured as nonprofits. They can have one owner or many owners.
+            A company's culture can be influenced by its mission, decision-making norms, and how people communicate. 
+        </pre> </h2>
+        <h2 id="services"><pre>
+            ->Consumer services: Healthcare, education, information services, legal services, financial services, and public administration 
+            ->Business services: Engineering, computer software development, and professional services 
+            ->Public services: Defense and administration of justice 
+            ->Retail services: Wholesale and retail trade 
+            ->Economic services: Administrative services or public utilities 
+        </pre></h2>
+    </main>
+    <script>
+        const toggle_Btn=document.querySelector('.toggle_btn')
+        const toggle_btnIcon=document.querySelector('.toggle_btn i')
+        const dropDownMenu=document.querySelector('.dropdown_menu')
+
+        toggle_Btn.onclick=function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen=dropDownMenu.classList.contains('open')
+            toggle_btnIcon.classList=isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+        window.addEventListener("scroll",function(){
+            var header=document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY:0)})
+    </script>
+    <footer id="contact">
+        <small>
+            Copyright © 2023 Football History Archives. All Rights Reserved.
+          </small>
+    </footer>
+</body>
+</html>

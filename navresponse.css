@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background: #cdf6f1;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 10px;
+    color: #009988;
+}
+.loader{
+    position: relative;
+    height: 30px;
+    width: 50%;
+    border: 1px solid #009988;
+    border-radius: 50px;
+    overflow: hidden;   
+}
+.loading{
+    height: 100%;
+    width: 100%;
+    background-color: #009988;
+}
